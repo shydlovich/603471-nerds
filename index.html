@@ -5,8 +5,148 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
+    <header class="main-header">
+      <div class="container">
+        <nav class="main-navigation">
+          <a class="logo" href="index.html">
+            <img src="logo" alt="логотип">
+          </a>
+          <ul class="menu-block">
+            <li class="menu-item">
+              <a href="menu-link" href="#"></a>
+            </li>
+            <li class="menu-item">
+              <a href="menu-link" href="#"></a>
+            </li>
+            <li class="menu-item">
+              <a href="menu-link" href="catalog.html"></a>
+            </li>
+            <li class="menu-item">
+              <a href="menu-link" href="#"></a>
+            </li>
+          </ul>
+          <div class="menu-item">
+            <a href="menu-link basket" href="#"></a>
+          </div>
+        </nav>
+        <section class="slider">
+          <input class="btn-1" type="radio" name="slider-btn" id="slider-field" checked>
+          <input class="btn-2" type="radio" name="slider-btn" id="slider-second">
+          <input class="btn-3" type="radio" name="slider-btn" id="slider-last">
+          <div class="slider-btn">
+            <label for="slider-field"></label>
+            <label for="slider-second"></label>
+            <label for="slider-last"></label>
+          </div>
+        </section>
+        <section class="slider-1">
+          <b>Долго, дорого, скорпулезно</b>
+          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          <a href="#">Узнать больше</a>
+        </section>
+        <section class="slider-2">
+          <b>Любим математикукак никто другой</b>
+          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+          <a href="#">Узнать больше</a>
+        </section>
+        <section class="slider-3">
+          <b>Только ночь, только хардкор</b>
+          <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+          <a href="#">Узнать больше</a>
+        </section>
+      </div>
+    </header>
+    <main class="main-item">
+      <h2>Услуги</h2>
+      <section class="features">
+        <ul class="features-list">
+          <li class="features-item">
+            <h3>Веб-сайты</h3>
+            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a href="#">ЗАКАЗАТЬ</a>
+          </li>
+          <li class="features-item">
+            <h3>Приложения</h3>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a href="#">ЗАКАЗАТЬ</a>
+          </li>
+          <li class="features-item">
+            <h3>Презентации</h3>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a href="#">ЗАКАЗАТЬ</a>
+          </li>
+        </ul>
+      </section>
+      <article class="description">
+        <section class="description-item">
+          <b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <h3>Выполняем заказы на разработку</h3>
+          <ul class="offers">
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </section>
+        <aside class="statistics">
+          <h3>с 2004 года Любим точность во всем:</h3>
+          <table class="main-table">
+            <tr>
+              <th>146%</th>
+              <th>100%</th>
+              <th>50%</th>
+            </tr>
+            <tr>
+              <td>Уровень самоотдачи</td>
+              <td>Соблюдение сроков</td>
+              <td>Минимальная предоплата</td>
+            </tr>
+          </table>
+        </aside>
+      </article>
+      <section class="gallery">
+        <ul>
+          <li><img src="" alt="Академия"></li>
+          <li><img src="" alt="Бородински"></li>
+          <li><img src="" alt="Пинк"></li>
+          <li><img src="" alt="Мишка"></li>
+        </ul>
+      </section>
+      <section class="modal modal-map">
+        <div class="footer-contacts">
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75</p>
+          <a href="#">НАПИШИТЕ НАМ</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-social">
+      <b>Давайте дружить, это выгодно!</b>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+      <div class="footer-social">
+        <a class="social social-vk" href="#"></a>
+        <a class="social social-fb" href="#"></a>
+        <a class="social social-in" href="#"></a>
+      </div>
+    </footer>
+    <form action="me" method="post">
+      <h3>Напишите нам</h3>
+      <div class="important">
+        <label for="name-field"></label>
+        <input type="text" name="name" id="name-field" value="Имя Фамилия">
+        <label for="email-field"></label>
+        <input type="text" name="email" id="email-field" value="email@example.com">
+      </div>
+      <label for="message-field"></label>
+      <textarea name="message" id="message-field" value="В свободной форме"></textarea>
+      <span class="modal-close">x</span>
+    </form>
   </body>
 </html>
+
+
+
+
+
+
+
