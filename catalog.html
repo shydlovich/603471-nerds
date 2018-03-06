@@ -9,226 +9,286 @@
     <header class="main-header">
       <div class="container">
         <nav class="main-navigation">
-          <a class="logo" href="index.html">
+          <a class="logo">
             <img src="logo" alt="логотип">
           </a>
-          <ul class="menu-block">
+          <ul class="menu-list">
             <li class="menu-item">
-              <a href="menu-link" href="#"></a>
+              <a class="menu-link" href="#"></a>
             </li>
             <li class="menu-item">
-              <a href="menu-link" href="#"></a>
+              <a class="menu-link" href="#"></a>
             </li>
             <li class="menu-item">
-              <a href="menu-link" href="catalog.html"></a>
+              <a class="menu-link" href="catalog.html"></a>
             </li>
             <li class="menu-item">
-              <a href="menu-link" href="#"></a>
+              <a class="menu-link" href="#"></a>
             </li>
           </ul>
           <div class="menu-item">
-            <a href="menu-link basket" href="#"></a>
+            <a class="menu-link basket" href="#"></a>
           </div>
         </nav>
         <h1 class="caption">Магазин готовых шаблонов</h1>
       </div>
     </header>
-    <main>
-      <div>
-        <section class="sorting">
-          <p>СОРТИРОВАТЬ:</p>
-          <span>По цене</span>
-          <span>По типу</span>
-          <span>По названию</span>
-        </section>
-        <div class="services">
-          <article class="services-item">
-            <section class="points">
-              <div class="points-item">
-                <span></span>
-                <span></span>
-                <span></span>
+    <main class="main-item">
+      <div class="container">
+        <aside>
+          <div class="main-form">
+            <form action="" method="post" oninput="daysoutput.value=dayscount.value">
+              <div class="price">
+                <b class="tagline">СТОИМОСТЬ:</b>
+                <input type="range" min="0" max="15000" step="1">
               </div>
-            </section>
-            <section >
-              <img src="#" alt="картинка">
-            </section>
-            <section class="text">
-              <p></p>
-            </section>
-            <section class="information">
-              <h2>Sedona</h2>
-              <p>Информационный сайт для туристов</p>
-              <a href="#">9 900 руб.</a>
-            </section>
-          </article>
-          <article class="services-item">
-            <section class="points">
-              <div class="points-item">
-                <span></span>
-                <span></span>
-                <span></span>
+              <div class="price-list">
+                <div class="price-item">
+                  <output name="daysoutput"></output>
+                </div>
+                <div class="price-item">
+                  <output name="daysoutput"></output>
+                </div>
               </div>
-            </section>
-            <section >
-              <img src="#" alt="картинка">
-            </section>
-            <section class="text">
-              <p></p>
-            </section>
-            <section class="information">
-              <h2>A Plus</h2>
-              <p>Лендинг курсов повышения квалификации</p>
-              <a href="#">9 900 руб.</a>
-            </section>
-          </article>
-          <article class="services-item">
-            <section class="points">
-              <div class="points-item">
-                <span></span>
-                <span></span>
-                <span></span>
+              <div class="grid">
+                <b class="tagline">СЕТКА:</b>
+                <div class="grid-list">
+                  <div class="grid-item">
+                    <input type="radio" name="grid" id="grid-field">
+                    <label for="grid-field">Адаптивная</label>
+                  </div>
+                  <div class="grid-item">
+                    <input type="radio" name="grid" id="grid-field">
+                    <label for="grid-field">Фиксированная</label>
+                  </div>
+                  <div class="grid-item">
+                    <input type="radio" name="grid" id="grid-field">
+                    <label for="grid-field">Резиновая</label>
+                  </div>
+                </div>
               </div>
-            </section>
-            <section >
-              <img src="#" alt="картинка">
-            </section>
-            <section class="text">
-              <p></p>
-            </section>
-            <section class="information">
-              <h2>Pink App</h2>
-              <p>Продуктовый лендинг приложения для iOS и Android</p>
-              <a href="#">9 900 руб.</a>
-            </section>
-          </article>
-          <article class="services-item">
-            <section class="points">
-              <div class="points-item">
-                <span></span>
-                <span></span>
-                <span></span>
+              <div class="capabilities">
+                <b class="tagline">ОСОБЕННОСТИ:</b>
+                <div class="capabilities-ltem">
+                  <input type="checkbox" name="Slider" id="Slider" checked>
+                  <label for="Slider"></label>
+                </div>
+                <div class="capabilities-ltem">
+                  <input type="checkbox" name="advantages" id="advantages" checked>
+                  <label for="Slider"></label>
+                </div>
+                <div class="capabilities-ltem">
+                  <input type="checkbox" name="news" id="news" checked>
+                  <label for="Slider"></label>
+                </div>
+                <div class="capabilities-ltem">
+                  <input type="checkbox" name="gallery" id="gallery" checked>
+                  <label for="Slider"></label>
+                </div>
+                <div class="capabilities-ltem">
+                  <input type="checkbox" name="basket" id="basket" checked>
+                  <label for="Slider"></label>
+                </div>
+                <div class="button">
+                  <button type="submit">ПОКАЗАТЬ</button>
+                </div>
               </div>
-            </section>
-            <section >
-              <img src="#" alt="картинка">
-            </section>
-            <section class="text">
-              <p></p>
-            </section>
-            <section class="information">
-              <h2>Barbershop</h2>
-              <p>Сайт салоны красоты.Для мужчин, да.</p>
-              <a href="#">9 900 руб.</a>
-            </section>
-          </article>
-          <article class="services-item">
-            <section class="points">
-              <div class="points-item">
-                <span></span>
-                <span></span>
-                <span></span>
+            </form>
+          </div>
+        </aside>
+        <div class="container-item">
+          <div class="sorting">
+            <p class="text">СОРТИРОВАТЬ:</p>
+            <div class="sorting-item">
+              <a class="sorting-link" href="">По цене</a>
+              <a class="sorting-link" href="">По типу</a>
+              <a class="sorting-link" href="">По названию</a>
+            </div>
+            <div class="sorting-list">
+             <a class="sorting-link" href=""></a>
+             <a class="sorting-link" href=""></a>
+            </div>
+          </div>
+          <div class="services">
+            <article class="services-item">
+              <div class="points">
+                <div class="points-item">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
               </div>
-            </section>
-            <section >
-              <img src="#" alt="картинка">
-            </section>
-            <section class="text">
-              <p></p>
-            </section>
-            <section class="information">
-              <h2>MISHKA</h2>
-              <p>Интернет-магазин вязаных игрушек</p>
-              <a href="#">9 900 руб.</a>
-            </section>
-          </article>
-          <article class="services-item">
-            <section class="points">
-              <div class="points-item">
-                <span></span>
-                <span></span>
-                <span></span>
+              <div class="picture">
+                <img class="picture-list" src="#" alt="картинка">
               </div>
-            </section>
-            <section >
-              <img src="#" alt="картинка">
-            </section>
-            <section class="text">
-              <p></p>
-            </section>
-            <section class="information">
-              <h2>A Plus</h2>
-              <p>Лендинг курсов повышения квалификации</p>
-              <a href="#">9 900 руб.</a>
-            </section>
-          </article>
-          <article class="services-item">
-            <section class="points">
-              <div class="points-item">
-                <span></span>
-                <span></span>
-                <span></span>
+              <div class="text-item">
+                <p class="text"></p>
               </div>
-            </section>
-            <section >
-              <img src="#" alt="картинка">
-            </section>
-            <section class="text">
-              <p></p>
-            </section>
-            <section class="information">
-              <h2>КВАСТ</h2>
-              <p>Промо-сайт производителя крафтового кваса</p>
-              <a href="#">9 900 руб.</a>
-            </section>
-          </article>
-          <aside>
-            <section class="main-form">
-             <h3>СТОИМОСТЬ</h3>
-              <input type="range" min="0" max="15000" step="1">
-              <h3>СЕТКА</h3>
-              <p>Адаптивная</p>
-              <p>Фиксированная</p>
-              <p>Резиновая</p>
-              <h3>ОСОБЕННОСТИ</h3>
-              <p>Слайдер</p>
-              <p>Блок преимуществ</p>
-              <p>Новости</p>
-              <p>Галерея</p>
-              <p>Корзина</p>
-              <button>ПОКАЗАТЬ</button>
-            </section>
-          </aside>
+              <section class="information">
+                <h2 class="head">Sedona</h2>
+                <p class="text">Информационный сайт для туристов</p>
+                <a claaa="link" href="#">9 900 руб.</a>
+              </section>
+            </article>
+            <article class="services-item">
+              <div class="points">
+                <div class="points-item">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="picture">
+                <img class="picture-list" src="#" alt="картинка">
+              </div>
+              <div class="text-item">
+                <p class="text"></p>
+              </div>
+              <section class="information">
+                <h2>A Plus</h2>
+                <p class="text">Лендинг курсов повышения квалификации</p>
+                <a claaa="link" href="#">9 900 руб.</a>
+              </section>
+            </article>
+            <article class="services-item">
+              <div class="points">
+                <div class="points-item">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="picture">
+                <img class="picture-list" src="#" alt="картинка">
+              </div>
+              <div class="text-item">
+                <p class="text"></p>
+              </div>
+              <section class="information">
+                <h2 class="head">Pink App</h2>
+                <p class="text">Продуктовый лендинг приложения для iOS и Android</p>
+                <a claaa="link" href="#">9 900 руб.</a>
+              </section>
+            </article>
+            <article class="services-item">
+              <div class="points">
+                <div class="points-item">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="picture">
+                <img class="picture-list" src="#" alt="картинка">
+              </div>
+              <div class="text-item">
+                <p class="text"></p>
+              </div>
+              <section class="information">
+                <h2 class="head">Barbershop</h2>
+                <p class="text">Сайт салоны красоты.Для мужчин, да.</p>
+                <a claaa="link" href="#">9 900 руб.</a>
+              </section>
+            </article>
+            <article class="services-item">
+              <div class="points">
+                <div class="points-item">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="picture">
+                <img class="picture-list" src="#" alt="картинка">
+              </div>
+              <div class="text-item">
+                <p class="text"></p>
+              </div>
+              <section class="information">
+                <h2 class="head">MISHKA</h2>
+                <p class="text">Интернет-магазин вязаных игрушек</p>
+                <a claaa="link" href="#">9 900 руб.</a>
+              </section>
+            </article>
+            <article class="services-item">
+              <div class="points">
+                <div class="points-item">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="picture">
+                <img class="picture-list" src="#" alt="картинка">
+              </div>
+              <div class="text-item">
+                <p class="text"></p>
+              </div>
+              <section class="information">
+                <h2 class="head">A Plus</h2>
+                <p class="text">Лендинг курсов повышения квалификации</p>
+                <a claaa="link" href="#">9 900 руб.</a>
+              </section>
+            </article>
+            <article class="services-item">
+              <div class="points">
+                <div class="points-item">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="picture">
+                <img class="picture-list" src="#" alt="картинка">
+              </div>
+              <div class="text-item">
+                <p class="text"></p>
+              </div>
+              <section class="information">
+                <h2 class="head">КВАСТ</h2>
+                <p class="text">Промо-сайт производителя крафтового кваса</p>
+                <a claaa="link" href="#">9 900 руб.</a>
+              </section>
+            </article>
+          </div>
+        </div>
+        <div class="pages-list">
+          <a class="pages-link" href="">1</a>
+          <a class="pages-link" href="">2</a>
+          <a class="pages-link" href="">3</a>
+          <a class="pages-link" href="">СЛЕДУЮЩАЯ</a>
         </div>
       </div>
       <section class="modal modal-map">
         <div class="footer-contacts">
-          <h3>NЁRDS DESIGN STUDIO</h3>
-          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75</p>
-          <a href="#">НАПИШИТЕ НАМ</a>
+          <h3 class="head">NЁRDS DESIGN STUDIO</h3>
+          <p class="text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75</p>
+          <a claaa="link" href="#">НАПИШИТЕ НАМ</a>
         </div>
       </section>
     </main>
-    <footer class="footer-social">
-      <b>Давайте дружить, это выгодно!</b>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
-      <div class="footer-social">
-        <a class="social social-vk" href="#"></a>
-        <a class="social social-fb" href="#"></a>
-        <a class="social social-in" href="#"></a>
+    <footer class="main-footer">
+      <div class="container">
+        <b class="tagline">Давайте дружить, это выгодно!</b>
+        <p class="text">Скидка 10% для друзей из социальных сетей.</p>
+        <div class="footer-social">
+          <a class="social social-vk" href="#"></a>
+          <a class="social social-fb" href="#"></a>
+          <a class="social social-in" href="#"></a>
+        </div>
       </div>
     </footer>
     <form action="me" method="post">
-      <h3>Напишите нам</h3>
+      <b class="tagline">Напишите нам</b>
       <div class="important">
-        <label for="name-field"></label>
+        <label for="name-field">Ваше имя:</label>
         <input type="text" name="name" id="name-field" value="Имя Фамилия">
-        <label for="email-field"></label>
+        <label for="email-field">Ваш e-mail:</label>
         <input type="text" name="email" id="email-field" value="email@example.com">
       </div>
-      <label for="message-field"></label>
+      <label for="message-field">Текст письма:</label>
       <textarea name="message" id="message-field" value="В свободной форме"></textarea>
-      <span class="modal-close">x</span>
+      <button type="submit">ОТРРАВИТЬ</button>
     </form>
   </body>
 </html>
