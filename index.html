@@ -7,26 +7,26 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <nav class="main-navigation">
+        <nav class="main-navigation" aria-label="Меню сайта">
           <a class="logo">
             <img src="img/nerds-logo.svg" alt="логотип">
           </a>
           <ul class="menu-list">
-            <li class="menu-item">
-              <a class="menu-link" href="#"></a>
+            <li class="menu-item" >
+              <a class="menu-link" href="#">СТУДИЯ</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link" href="#"></a>
+              <a class="menu-link" href="#">КЛИЕНТЫ</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link" href="catalog.html"></a>
+              <a class="menu-link" href="catalog.html">МАГАЗИН</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link" href="#"></a>
+              <a class="menu-link" href="#">КОНТАКТЫ</a>
             </li>
           </ul>
           <div class="menu-item">
-            <a class="menu-link basket" href="#"></a>
+            <a class="menu-link basket" href="#">КОРЗИНА</a>
           </div>
         </nav>
         <div class="slider-list">
@@ -112,16 +112,16 @@
         <section class="partners">
           <ul class="logo-list">
             <li class="logo-item">
-              <a class="logo-link" href="#"><img src="" alt="Академия"></a>
+              <a class="logo-link" href="#"><img src="" alt="Логотип Академия"></a>
             </li>
             <li class="logo-item">
-              <a class="logo-link" href="#"><img src="" alt="Бородински"></a>
+              <a class="logo-link" href="#"><img src="" alt="Логотип Бородински"></a>
             </li>
             <li class="logo-item">
-              <a class="logo-link" href="#"><img src="" alt="Пинк"></a>
+              <a class="logo-link" href="#"><img src="" alt="Логотип Пинк"></a>
             </li>
             <li class="logo-item">
-              <a class="logo-link" href="#"><img src="" alt="Мишка"></a>
+              <a class="logo-link" href="#"><img src="" alt="Логотип Мишка"></a>
             </li>
           </ul>
         </section>
@@ -130,7 +130,7 @@
         <div class="footer-contacts">
           <h2 class="head">NЁRDS DESIGN STUDIO</h2>
           <p class="text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75</p>
-          <a class="link" href="#">НАПИШИТЕ НАМ</a>
+          <a class="link" href="#" aria-label="Кнопка">НАПИШИТЕ НАМ</a>
         </div>
       </section>
     </main>
@@ -140,28 +140,31 @@
         <p class="text">Скидка 10% для друзей из социальных сетей.</p>
         <ul class="social-list">
           <li class="social-item">
-            <a class="social social-vk" href="#"></a>
+            <a class="social social-vk" href="#" aria-label="Мы в Вконтантакте"></a>
           </li>
           <li class="social-item">
-            <a class="social social-fb" href="#"></a>
+            <a class="social social-fb" href="#" aria-label="Мы на Фейсбуке"></a>
           </li>
           <li class="social-item">
-            <a class="social social-in" href="#"></a>
+            <a class="social social-in" href="#" aria-label="Мы в инстаграме"></a>
           </li>
         </ul>
       </div>
     </footer>
-    <form action="me" method="post">
-      <b class="tagline">Напишите нам</b>
-      <div class="important">
-        <label for="name-field">Ваше имя:</label>
-        <input type="text" name="name" id="name-field" value="Имя Фамилия">
-        <label for="email-field">Ваш e-mail:</label>
-        <input type="text" name="email" id="email-field" value="email@example.com">
-      </div>
-      <label for="message-field">Текст письма:</label>
-      <textarea name="message" id="message-field" placeholder="В свободной форме"></textarea>
-      <button class="link" type="submit">ОТРРАВИТЬ</button>
-    </form>
+    <section class="visually-hidden">
+      <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+        <b class="tagline">Напишите нам</b>
+        <div class="important">
+          <label for="name-field">Ваше имя:</label>
+          <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" autofocus>
+          <label for="email-field">Ваш e-mail:</label>
+          <input type="text" name="email" id="email-field" placeholder="email@example.com">
+        </div>
+        <label for="message-field">Текст письма:</label>
+        <textarea name="message" id="message-field" placeholder="В свободной форме"></textarea>
+        <button class="link" type="submit">ОТРРАВИТЬ</button>
+      </form>
+      <button class="modal-close" type="button" aria-label="Закрыть форму">Закрыть</button>
+    </section>
   </body>
 </html>
