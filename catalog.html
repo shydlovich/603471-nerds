@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header-list">
       <div class="container">
         <nav class="main-navigation" aria-label="Меню сайта">
           <a class="logo">
@@ -89,7 +91,7 @@
                   <label for="basket">Корзина</label>
                 </div>
                 <div class="button">
-                  <button class="link" type="submit">Показать</button>
+                  <button class="link link-show" type="submit">Показать</button>
                 </div>
               </div>
             </form>
@@ -108,14 +110,14 @@
               <a class="sorting-link" href="">По названию</a>
             </li>
             <li class="sorting-list">
-              <a class="sorting-link" href="" aria-label="По возрастанию"></a>
+              <a class="sorting-link sorting-up" href="" aria-label="По возрастанию"></a>
             </li>
             <li class="sorting-list">
-              <a class="sorting-link" href="" aria-label="По убыванию"></a>
+              <a class="sorting-link sorting-down" href="" aria-label="По убыванию"></a>
             </li>
           </ul>
           <ul class="services">
-            <li>
+            <li class="services-list">
               <article class="services-item">
                 <div class="points">
                 </div>
@@ -129,7 +131,7 @@
                 </section>
               </article>
             </li>
-            <li>
+            <li class="services-list">
               <article class="services-item">
                 <div class="points">
                 </div>
@@ -143,7 +145,7 @@
                 </section>
               </article>
             </li>
-            <li>
+            <li class="services-list">
               <article class="services-item">
                 <div class="points">
                 </div>
@@ -157,7 +159,7 @@
                 </section>
               </article>
             </li>
-            <li>
+            <li class="services-list">
               <article class="services-item">
                 <div class="points">
                 </div>
@@ -171,7 +173,7 @@
                 </section>
               </article>
             </li>
-            <li>
+            <li class="services-list">
               <article class="services-item">
                 <div class="points">
                 </div>
@@ -185,7 +187,7 @@
                 </section>
               </article>
             </li>
-            <li>
+            <li class="services-list">
               <article class="services-item">
                 <div class="points">
                 </div>
@@ -202,14 +204,14 @@
           </ul>
         </div>
         <div class="pages-list">
-          <a class="pages-link" href="">1</a>
+          <a class="pages-link one" href="">1</a>
           <a class="pages-link" href="">2</a>
           <a class="pages-link" href="">3</a>
           <a class="pages-link" href="">Следующая</a>
         </div>
       </div>
       <section class="modal modal-map">
-        <div class="footer-contacts">
+        <div class="modal-contacts">
           <h2 class="head">NЁRDS DESIGN STUDIO</h2>
           <p class="text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75</p>
           <a class="link" href="#">Напишите нам</a>
@@ -218,7 +220,7 @@
     </main>
     <footer class="main-footer">
       <div class="container">
-        <b class="tagline">Давайте дружить, это выгодно!</b>
+        <b class="tagline benefit">Давайте дружить, это выгодно!</b>
         <p class="text">Скидка 10% для друзей из социальных сетей.</p>
         <ul class="social-list">
           <li class="social-item">
@@ -237,13 +239,13 @@
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
         <b class="tagline">Напишите нам</b>
         <div class="important">
-          <label for="name-field">Ваше имя:</label>
-          <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" autofocus>
-          <label for="email-field">Ваш e-mail:</label>
-          <input type="text" name="email" id="email-field" placeholder="email@example.com">
+          <label class="visually-hidden" for="name-field">Ваше имя:</label>
+          <input class="name-user" type="text" name="name" id="name-field" placeholder="Имя Фамилия" autofocus>
+          <label class="visually-hidden" for="email-field">Ваш e-mail:</label>
+          <input class="name-email" type="text" name="email" id="email-field" placeholder="email@example.com">
         </div>
-        <label for="message-field">Текст письма:</label>
-        <textarea name="message" id="message-field" placeholder="В свободной форме"></textarea>
+        <label class="visually-hidden" for="message-field">Текст письма:</label>
+        <textarea class="name-text" name="message" id="message-field" placeholder="В свободной форме"></textarea>
         <button class="link" type="submit">Отправить</button>
       </form>
       <button class="modal-close" type="button" aria-label="Закрыть форму"></button>

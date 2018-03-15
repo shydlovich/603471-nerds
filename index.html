@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <header class="main-header">
@@ -41,20 +43,20 @@
             </div>
           </div>
           <ul class="carousel">
-            <li class="carousel-item">
+            <li class="carousel-item red">
               <b class="tagline">Долго, дорого, скорпулезно</b>
               <p class="text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-              <a class="ink" href="#">Узнать больше</a>
+              <a class="link link-list" href="#">Узнать больше</a>
             </li>
-            <li class="carousel-item">
+            <li class="carousel-item green">
               <b class="tagline">Любим математикукак никто другой</b>
               <p class="text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-              <a class="link" href="#">Узнать больше</a>
+              <a class="link link-list" href="#">Узнать больше</a>
             </li>
-            <li class="carousel-item">
+            <li class="carousel-item blue">
               <b class="tagline">Только ночь, только хардкор</b>
               <p class="text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-              <a class="link" href="#">Узнать больше</a>
+              <a class="link link-list" href="#">Узнать больше</a>
             </li>
           </ul>
         </div>
@@ -63,30 +65,30 @@
     <main class="main-item">
       <div class="container">
         <section class="features">
-          <h2 class="head-hidden">Услуги</h2>
+          <h2 class="visually-hidden">Услуги</h2>
           <ul class="features-list">
             <li class="features-item">
               <h3 class="head">Веб-сайты</h3>
               <p class="text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-              <a class="link" href="#">Заказать</a>
+              <a class="link link-list" href="#">Заказать</a>
             </li>
             <li class="features-item">
               <h3 class="head">Приложения</h3>
               <p class="text">Покорите топ-10 приложений в AppStore и Google Play</p>
-              <a class="link" href="#">Заказать</a>
+              <a class="link link-green" href="#">Заказать</a>
             </li>
             <li class="features-item">
               <h3 class="head">Презентации</h3>
               <p class="text">Вы даже не подозреваете, насколько вы изумительны!</p>
-              <a class="link" href="#">Заказать</a>
+              <a class="link link-yellow" href="#">Заказать</a>
             </li>
           </ul>
         </section>
         <article class="description">
           <section class="description-list">
-            <b class="tagline">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+            <b class="tagline cry">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
             <p class="text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-            <b class="tagline">Выполняем заказы на разработку</b>
+            <b class="tagline Job">Выполняем заказы на разработку:</b>
             <ul class="offers-list">
               <li class="offers-item">Веб-сайтов любой сложности</li>
               <li class="offers-item">Мобильных приложений для iOS и Android</li>
@@ -94,9 +96,11 @@
             </ul>
           </section>
           <aside class="statistics">
-            <b class="tagline">с 2004 года Любим точность во всем:</b>
+            <div class="logo-galery">
+            </div>
+            <b class="tagline job">с 2004 года Любим точность во всем:</b>
             <table class="main-table">
-              <tr class="table-list">
+              <tr class="table-list percentages">
                 <th class="table-item">146%</th>
                 <th class="table-item">100%</th>
                 <th class="table-item">50%</th>
@@ -112,22 +116,22 @@
         <section class="partners">
           <ul class="logo-list">
             <li class="logo-item">
-              <a class="logo-link" href="#"><img src="" alt="Логотип Академия"></a>
+              <a class="logo-link" href="#"><img src="img/logo-1.png" alt="Логотип Академия"></a>
             </li>
             <li class="logo-item">
-              <a class="logo-link" href="#"><img src="" alt="Логотип Бородински"></a>
+              <a class="logo-link" href="#"><img src="img/logo-2.png" alt="Логотип Бородински"></a>
             </li>
             <li class="logo-item">
-              <a class="logo-link" href="#"><img src="" alt="Логотип Пинк"></a>
+              <a class="logo-link" href="#"><img src="img/logo-3.png" alt="Логотип Пинк"></a>
             </li>
             <li class="logo-item">
-              <a class="logo-link" href="#"><img src="" alt="Логотип Мишка"></a>
+              <a class="logo-link" href="#"><img src="img/logo-4.png" alt="Логотип Мишка"></a>
             </li>
           </ul>
         </section>
       </div>
       <section class="modal modal-map">
-        <div class="footer-contacts">
+        <div class="modal-contacts">
           <h2 class="head">NЁRDS DESIGN STUDIO</h2>
           <p class="text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75</p>
           <a class="link" href="#">Напишите нам</a>
@@ -136,7 +140,7 @@
     </main>
     <footer class="main-footer">
       <div class="container">
-        <b class="tagline">Давайте дружить, это выгодно!</b>
+        <b class="tagline benefit">Давайте дружить, это выгодно!</b>
         <p class="text">Скидка 10% для друзей из социальных сетей.</p>
         <ul class="social-list">
           <li class="social-item">
@@ -155,13 +159,13 @@
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
         <b class="tagline">Напишите нам</b>
         <div class="important">
-          <label for="name-field">Ваше имя:</label>
-          <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" autofocus>
-          <label for="email-field">Ваш e-mail:</label>
-          <input type="text" name="email" id="email-field" placeholder="email@example.com">
+          <label class="visually-hidden" for="name-field">Ваше имя:</label>
+          <input class="name-user" type="text" name="name" id="name-field" placeholder="Имя Фамилия" autofocus>
+          <label class="visually-hidden" for="email-field">Ваш e-mail:</label>
+          <input class="name-email" type="text" name="email" id="email-field" placeholder="email@example.com">
         </div>
-        <label for="message-field">Текст письма:</label>
-        <textarea name="message" id="message-field" placeholder="В свободной форме"></textarea>
+        <label class="visually-hidden" for="message-field">Текст письма:</label>
+        <textarea class="name-text" name="message" id="message-field" placeholder="В свободной форме"></textarea>
         <button class="link" type="submit">Отправить</button>
       </form>
       <button class="modal-close" type="button" aria-label="Закрыть форму"></button>
