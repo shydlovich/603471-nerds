@@ -1,11 +1,11 @@
 @font-face {
-  font-family:"Roboto";
-  src:url("Roboto.woff") format("woff"),
-      url("Roboto.woff2") format("woff2"),
-      url("Robotobold.woff") format("woff"),
-      url("Robotobold.woff2") format("woff2"),
-      url("Robotomedium.woff") format("woff"),
-      url("Robotomedium.woff2") format("woff2");
+  font-family: "Roboto";
+  src: url("../fonts/Roboto.woff") format("woff"),
+       url("../fonts/Roboto.woff2") format("woff2"),
+       url("../fonts/Robotobold.woff") format("woff"),
+       url("../fonts/Robotobold.woff2") format("woff2"),
+       url("../fonts/Robotomedium.woff") format("woff"),
+       url("../fonts/Robotomedium.woff2") format("woff2");
 }
 
 body {
@@ -112,7 +112,7 @@ a {
 }
 
 .link-list:active {
-  color: #e48789; 
+  color: #e48789;
 }
 
 .features-list {
@@ -192,7 +192,7 @@ a {
 
 .percentages {
   font-size: 45px;
-  line-height: 10px;
+  line-height: 50px;
   font-weight: bold;
   color: #000000;
 }
@@ -203,7 +203,7 @@ a {
 
 .modal {
   background-image: url("../img/maps.jpg");
-  background-position: 0 0;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
