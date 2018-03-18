@@ -1,11 +1,26 @@
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto.woff") format("woff"),
-       url("../fonts/Roboto.woff2") format("woff2"),
+  src:
+       local("Roboto-Regular"),
+       url("../fonts/Roboto.woff") format("woff"),
+       url("../fonts/Roboto.woff2") format("woff2");
+       font-weight: 400;
+}
+
+@font-face {
+  font-family: "Robotobold";
+  src: local("Robotobold"),
        url("../fonts/Robotobold.woff") format("woff"),
-       url("../fonts/Robotobold.woff2") format("woff2"),
+       url("../fonts/Robotobold.woff2") format("woff2");
+       font-weight; 600;
+}
+
+@font-face {
+  font-family: "Robotomedium";
+  src: local("Robotomedium"),
        url("../fonts/Robotomedium.woff") format("woff"),
        url("../fonts/Robotomedium.woff2") format("woff2");
+       font-weight: 900;
 }
 
 body {
@@ -190,21 +205,28 @@ a {
 
 .features-item {
   width: 300px;
+  margin-top: 76px;
 }
 
 .features-item-red {
+  width: 300px;
+  height: 140px;
   background-image: url("../img/illustration-1.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .features-item-green {
+  width: 300px;
+  height: 140px;
   background-image: url("../img/illustration-2.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .features-item-yellow {
+  width: 300px;
+  height: 140px;
   background-image: url("../img/illustration-3.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -228,6 +250,14 @@ a {
 
 .statistics {
   width: 360px;
+}
+
+.logo-galery {
+  width: 360px;
+  height: 208px;
+  background-image: url(../img/nerds-illustration.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .job {
@@ -283,32 +313,38 @@ b.benefit {
 
 .social {
   width: 265px;
-  width: 80px;
-  height: 80px;
   font-size: 5px;
   line-height: 5px;
   font-family: bold;
   color: #ffffff;
-  background-color: #e1e1e1;
   border-radius: 50%;
 }
 
 .social-vk {
+  width: 80px;
+  height: 80px;
   background-image: url("../img/vk-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
+  background-color: #e1e1e1;
 }
 
 .social-fb {
+  width: 80px;
+  height: 80px;
   background-image: url("../img/fb-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
+  background-color: #e1e1e1;
 }
 
 .social-in {
+  width: 80px;
+  height: 80px;
   background-image: url("../img/insta-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
+  background-color: #e1e1e1;
 }
 
 .social:hover {
@@ -373,6 +409,9 @@ h1.caption {
   vertical-align: middle;
 }
 
+.services-list {
+  padding-bottom: 33px;
+}
 .main-form {
   width: 260px;
 }
@@ -423,21 +462,33 @@ input[type="checkbox"]:hover {
 }
 
 .sorting {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+
 .sorting-up {
+  width: 12px;
+  height: 12px;
   background-image: url("../img/icon-up-dir.svg");
   background-position: center;
   background-repeat: no-repeat;
+  background-color: #a6a6a6;
 }
 
 .sorting-down {
+  width: 12px;
+  height: 12px;
   background-image: url("../img/icon-down-dir.svg");
   background-position: center;
   background-repeat: no-repeat;
+  background-color: #a6a6a6;
+}
+
+.sorting-list {
+  padding-right: 25px;
 }
 
 .sorting-list a {
