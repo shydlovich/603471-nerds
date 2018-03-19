@@ -1,26 +1,25 @@
 @font-face {
   font-family: "Roboto";
-  src:
-       local("Roboto-Regular"),
+  src: local("Roboto-Regular"),
        url("../fonts/Roboto.woff") format("woff"),
        url("../fonts/Roboto.woff2") format("woff2");
        font-weight: 400;
 }
 
 @font-face {
-  font-family: "Robotobold";
+  font-family: "Roboto";
   src: local("Robotobold"),
        url("../fonts/Robotobold.woff") format("woff"),
        url("../fonts/Robotobold.woff2") format("woff2");
-       font-weight; 600;
+       font-weight; 700;
 }
 
 @font-face {
-  font-family: "Robotomedium";
+  font-family: "Roboto";
   src: local("Robotomedium"),
        url("../fonts/Robotomedium.woff") format("woff"),
        url("../fonts/Robotomedium.woff2") format("woff2");
-       font-weight: 900;
+       font-weight: 500;
 }
 
 body {
@@ -284,7 +283,18 @@ a {
   margin: 0;
   margin-top: 120px;
   padding: 0;
+  background-position: center;
   list-style: none;
+}
+
+.logo-item a {
+  width: 260px;
+  height: 180px;
+  vertical-align: middle;
+}
+
+.logo-item a:first-child {
+  align-items: baseline;
 }
 
 .modal {
@@ -305,14 +315,23 @@ b.benefit {
   font-weight: bold;
 }
 
+.container-footer {
+  display: flex;
+}
+
+.exhortation {
+  order: 1;
+}
+
 .social-list {
+  width: 270px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .social {
-  width: 265px;
+  display: inline-block;
   font-size: 5px;
   line-height: 5px;
   font-family: bold;
