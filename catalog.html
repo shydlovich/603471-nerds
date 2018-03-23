@@ -24,7 +24,7 @@
               <a class="menu-link" href="catalog.html">Магазин</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link" href="#">Корзина</a>
+              <a class="menu-link" href="#">Контакты</a>
             </li>
           </ul>
           <div class="menu-item">
@@ -39,32 +39,36 @@
         <div class="container-cataloge">
           <aside class="fofm-lateral">
             <div class="main-form">
-              <form action="" method="post" oninput="daysoutput.value=dayscount.value">
-                <div class="price">
-                  <b class="tagline">Стоимость:</b>
-                  <input type="range" min="0" max="15000" step="1">
-                </div>
-                <div class="price-list">
-                  <div class="price-item">
-                    <output name="daysoutput"></output>
-                  </div>
-                  <div class="price-item">
-                    <output name="daysoutput"></output>
+              <form action="" method="post">
+                <div class="filter-item">
+                  <legend>Стоимость:</legend>
+                  <div class="range-filter">
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar" style="margin-left: 5%; width: 60%"></div>
+                      </div>
+                      <div class="toggle toggle-min"></div>
+                        <div class="toggle toggle-max"></div>
+                    </div>
+                    <div class="price-controls">
+                      <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                      <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                    </div>
                   </div>
                 </div>
                 <div class="grid">
                   <b class="tagline">Сетка:</b>
                   <div class="grid-list">
                     <div class="grid-item">
-                      <input type="radio" name="grid" id="adaptability">
+                      <input class="visually-hidden filter-input-radio" type="radio" name="grid" id="adaptability" checked>
                       <label for="adaptability">Адаптивная</label>
                     </div>
                     <div class="grid-item">
-                      <input type="radio" name="grid" id="fixity">
+                      <input class="visually-hidden filter-input-radio" type="radio" name="grid" id="fixity">
                       <label for="fixity">Фиксированная</label>
                     </div>
                     <div class="grid-item">
-                      <input type="radio" name="grid" id="rubber">
+                      <input class="visually-hidden filter-input-radio" type="radio" name="grid" id="rubber">
                       <label for="rubber">Резиновая</label>
                     </div>
                   </div>
@@ -72,26 +76,26 @@
                 <div class="capabilities">
                   <b class="tagline">Особенности:</b>
                   <div class="capabilities-item">
-                    <input type="checkbox" name="slider" id="slider-field" checked>
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="slider" id="slider-field" checked>
                     <label for="slider-field">Слайдер</label>
                   </div>
                   <div class="capabilities-item">
-                    <input type="checkbox" name="advantages" id="advantages">
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="advantages" id="advantages">
                     <label for="advantages">Блок преимуществ</label>
                   </div>
                   <div class="capabilities-item">
-                    <input type="checkbox" name="news" id="news">
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="news" id="news" checked>
                     <label for="news">Новости</label>
                   </div>
                   <div class="capabilities-item">
-                    <input type="checkbox" name="gallery" id="gallery">
+                    <input class="visually-hidden filter-input-checkbox"  type="checkbox" name="gallery" id="gallery">
                     <label for="gallery">Галерея</label>
                   </div>
                   <div class="capabilities-item">
-                    <input type="checkbox" name="basket" id="basket">
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="basket" id="basket">
                     <label for="basket">Корзина</label>
                   </div>
-                  <div class="button">
+                  <div class="show-button">
                     <button class="link link-show" type="submit">Показать</button>
                   </div>
                 </div>
@@ -112,10 +116,10 @@
                   <a class="sorting-link" href="">По названию</a>
                 </li>
                 <li class="sorting-list">
-                  <a class="sorting-link sorting-up" href="" aria-label="По возрастанию"></a>
+                  <a class="sorting-link sorting-down" href="" aria-label="По убыванию"></a>
                 </li>
                 <li class="sorting-list">
-                  <a class="sorting-link sorting-down" href="" aria-label="По убыванию"></a>
+                  <a class="sorting-link sorting-up" href="" aria-label="По возрастанию"></a>
                 </li>
               </ul>
             </div>
@@ -125,12 +129,12 @@
                   <div class="points">
                   </div>
                   <div class="picture">
-                    <img class="picture-list" src="img/img-sedona.jpg" alt="sedona">
+                    <img class="picture-list" src="img/img-sedona.jpg" width="360" height="576" alt="sedona">
                   </div>
                   <section class="information">
                     <h2 class="head"><a href="">Sedona</a></h2>
                     <p class="text">Информационный сайт для туристов</p>
-                    <a class="link" href="#">9 900 руб.</a>
+                    <a class="link link-cataloge" href="#">9 900 руб.</a>
                   </section>
                 </article>
               </li>
@@ -139,12 +143,12 @@
                   <div class="points">
                   </div>
                   <div class="picture">
-                    <img class="picture-list" src="img/img-pink.jpg" alt="pink app">
+                    <img class="picture-list" src="img/img-pink.jpg" width="360" height="576" alt="pink app">
                   </div>
                   <section class="information">
                     <h2><a href="">Pink App</a></h2>
                     <p class="text">Продуктовый лендинг приложения для iOS и Android</p>
-                    <a class="link" href="#">9 900 руб.</a>
+                    <a class="link link-cataloge" href="#">9 900 руб.</a>
                   </section>
                 </article>
               </li>
@@ -153,12 +157,12 @@
                   <div class="points">
                   </div>
                   <div class="picture">
-                    <img class="picture-list" src="img/img-barbershop.jpg" alt="barbershop">
+                    <img class="picture-list" src="img/img-barbershop.jpg" width="360" height="576" alt="barbershop">
                   </div>
                   <section class="information">
                     <h2 class="head"><a href="">Barbershop</a></h2>
                     <p class="text">Сайт салоны красоты. Для мужчин, да.</p>
-                    <a class="link" href="#">9 900 руб.</a>
+                    <a class="link link-cataloge" href="#">9 900 руб.</a>
                   </section>
                 </article>
               </li>
@@ -167,12 +171,12 @@
                   <div class="points">
                   </div>
                   <div class="picture">
-                    <img class="picture-list" src="img/img-mishka.jpg" alt="mishka">
+                    <img class="picture-list" src="img/img-mishka.jpg" width="360" height="576" alt="mishka">
                   </div>
                   <section class="information">
                     <h2 class="head"><a href="">MISHKA</a></h2>
                     <p class="text">Интернет-магазин вязаных игрушек</p>
-                    <a class="link" href="#">9 900 руб.</a>
+                    <a class="link link-cataloge" href="#">9 900 руб.</a>
                   </section>
                 </article>
               </li>
@@ -181,12 +185,12 @@
                   <div class="points">
                   </div>
                   <div class="picture">
-                    <img class="picture-list" src="img/img-aplus.jpg" alt="aplus">
+                    <img class="picture-list" src="img/img-aplus.jpg" width="360" height="576" alt="aplus">
                   </div>
                   <section class="information">
                     <h2 class="head"><a href="">A Plus</a></h2>
                     <p class="text">Лендинг курсов повышения квалификации</p>
-                    <a class="link" href="#">9 900 руб.</a>
+                    <a class="link link-cataloge" href="#">9 900 руб.</a>
                   </section>
                 </article>
               </li>
@@ -195,46 +199,48 @@
                   <div class="points">
                   </div>
                   <div class="picture">
-                    <img class="picture-list" src="img/img-kvast.jpg" alt="kvast">
+                    <img class="picture-list" src="img/img-kvast.jpg" width="360" height="576" alt="kvast">
                   </div>
                   <section class="information">
                     <h2 class="head"><a href="">КВАСТ</a></h2>
                     <p class="text">Промо-сайт производителя крафтового кваса</p>
-                    <a class="link" href="#">9 900 руб.</a>
+                    <a class="link link-cataloge" href="#">9 900 руб.</a>
                   </section>
                 </article>
              </li>
             </ul>
+            <div class="pages-list">
+              <a class="pages-link one" href="">1</a>
+              <a class="pages-link" href="">2</a>
+              <a class="pages-link" href="">3</a>
+              <a class="pages-link pages-next" href="">Следующая</a>
+            </div>
           </div>
-        </div>
-        <div class="pages-list">
-          <a class="pages-link one" href="">1</a>
-          <a class="pages-link" href="">2</a>
-          <a class="pages-link" href="">3</a>
-          <a class="pages-link" href="">Следующая</a>
         </div>
       </div>
       <section class="modal modal-map">
         <div class="modal-contacts">
           <h2 class="head">NЁRDS DESIGN STUDIO</h2>
-          <p class="text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75</p>
-          <a class="link" href="#">Напишите нам</a>
+          <p class="text">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8 <span class="contacts-phone">тел. +7 (812) 275-75-75</span></p>
+          <a class="link link-modal" href="#">Напишите нам</a>
         </div>
       </section>
     </main>
     <footer class="main-footer">
-      <div class="container">
-        <b class="tagline benefit">Давайте дружить, это выгодно!</b>
-        <p class="text">Скидка 10% для друзей из социальных сетей.</p>
+      <div class="container container-footer">
+        <div class="exhortation">
+          <b class="tagline benefit">Давайте дружить, это выгодно!</b>
+          <p class="text">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
         <ul class="social-list">
           <li class="social-item">
-            <a class="social social-vk" href="#" aria-label="Мы в Вконтакте"></a>
+            <a class="social social-vk" href="#" aria-label="Мы в Вконтантакте"></a>
           </li>
           <li class="social-item">
             <a class="social social-fb" href="#" aria-label="Мы на Фейсбуке"></a>
           </li>
           <li class="social-item">
-            <a class="social social-in" href="#" aria-label="Мы в инстаграм"></a>
+            <a class="social social-in" href="#" aria-label="Мы в инстаграме"></a>
           </li>
         </ul>
       </div>

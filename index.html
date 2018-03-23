@@ -31,44 +31,36 @@
             <a class="menu-link basket" href="#">Корзина</a>
           </div>
         </nav>
-        <div class="slider-list">
-          <div class="slider-button">
-            <input class="button-link" type="radio" name="slider-btn" id="slider-1" checked>
-            <input class="button-link" type="radio" name="slider-btn" id="slider-2">
-            <input class="button-link" type="radio" name="slider-btn" id="slider-3">
-            <div class="slider-btn">
-              <label for="slider-1"></label>
-              <label for="slider-2"></label>
-              <label for="slider-3"></label>
+        <section class="slider">
+          <div class="container-slider">
+            <h2 class="visually-hidden">Преимущества</h2>
+            <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+            <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+            <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+            <div class="slider-controls">
+              <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+              <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+              <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
             </div>
+            <ul class="slider-list">
+              <li class="slider-item">
+                <b>Долго, дорого,<br> скрупулезно.</b>
+                <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+                <a class="slider-item-button button" href="#">Узнать больше</a>
+              </li>
+              <li class="slider-item">
+                <b>Любим математику как никто другой</b>
+                <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+              <a class="slider-item-button button" href="#">Узнать больше</a>
+              </li>
+              <li class="slider-item">
+                <b>Только ночь,<br> только хардкор</b>
+                <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+                <a class="slider-item-button button" href="#">Узнать больше</a>
+              </li>
+            </ul>
           </div>
-          <ul class="carousel">
-            <li class="carousel-item">
-              <div class="container-carousel-item">
-                <b class="tagline">Долго, дорого, скорпулезно</b>
-                <p class="text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-                <a class="link link-list" href="#">Узнать больше</a>
-              </div>
-              <div class="red"></div>
-            </li>
-            <li class="carousel-item">
-              <div class="container-carousel-item">
-                <b class="tagline">Любим математикукак никто другой</b>
-                <p class="text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-                <a class="link link-list" href="#">Узнать больше</a>
-              </div>
-              <div class="green"></div>
-            </li>
-            <li class="carousel-item">
-              <div class="container-carousel-item">
-                <b class="tagline">Только ночь, только хардкор</b>
-                <p class="text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                <a class="link link-list" href="#">Узнать больше</a>
-              </div>
-              <div class="blue"></div>
-            </li>
-          </ul>
-        </div>
+        </section>
       </div>
     </header>
     <main class="main-item">
@@ -80,19 +72,19 @@
               <div class="features-item-red"></div>
               <h3 class="head">Веб-сайты</h3>
               <p class="text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-              <a class="link link-list" href="#">Заказать</a>
+              <a class="link link-color link-red" href="#">Заказать</a>
             </li>
             <li class="features-item">
               <div class="features-item-green"></div>
               <h3 class="head">Приложения</h3>
               <p class="text">Покорите топ-10 приложений в AppStore и Google Play</p>
-              <a class="link link-green" href="#">Заказать</a>
+              <a class="link link-color link-green" href="#">Заказать</a>
             </li>
             <li class="features-item">
               <div class="features-item-yellow"></div>
               <h3 class="head">Презентации</h3>
               <p class="text">Вы даже не подозреваете, насколько вы изумительны!</p>
-              <a class="link link-yellow" href="#">Заказать</a>
+              <a class="link link-color link-yellow" href="#">Заказать</a>
             </li>
           </ul>
         </section>
@@ -113,9 +105,9 @@
             <b class="tagline job">с 2004 года Любим точность во всем:</b>
             <table class="main-table">
               <tr class="table-list percentages">
-                <th class="table-item">146%</th>
-                <th class="table-item">100%</th>
-                <th class="table-item">50%</th>
+                <th class="table-item ">146<span class="sign">%</span></th>
+                <th class="table-item">100<span class="sign">%</span></th>
+                <th class="table-item">50<span class="sign">%</span></th>
               </tr>
               <tr class="table-list">
                 <td class="table-item">Уровень самоотдачи</td>
@@ -128,16 +120,16 @@
         <section class="partners">
           <ul class="logo-list">
             <li class="logo-item">
-              <a class="logo-link" href="#"><img src="img/logo-1.png" alt="Логотип Академия"></a>
+              <a class="logo-link" href="#"><img src="img/logo-1.png" alt="Логотип Академия" width="199" height="68"></a>
             </li>
             <li class="logo-item">
-              <a class="logo-link" href="#"><img src="img/logo-2.png" alt="Логотип Бородински"></a>
+              <a class="logo-link" href="#"><img src="img/logo-2.png" alt="Логотип Бородински" width="260" height="180"></a>
             </li>
             <li class="logo-item">
-              <a class="logo-link" href="#"><img src="img/logo-3.png" alt="Логотип Пинк"></a>
+              <a class="logo-link" href="#"><img src="img/logo-3.png" alt="Логотип Пинк" width="260" height="180"></a>
             </li>
             <li class="logo-item">
-              <a class="logo-link" href="#"><img src="img/logo-4.png" alt="Логотип Мишка"></a>
+              <a class="logo-link" href="#"><img src="img/logo-4.png" alt="Логотип Мишка" width="260" height="180"></a>
             </li>
           </ul>
         </section>
@@ -145,8 +137,8 @@
       <section class="modal modal-map">
         <div class="modal-contacts">
           <h2 class="head">NЁRDS DESIGN STUDIO</h2>
-          <p class="text">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8<br> тел. +7 (812) 275-75-75</p>
-          <a class="link" href="#">Напишите нам</a>
+          <p class="text">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8 <span class="contacts-phone">тел. +7 (812) 275-75-75</span></p>
+          <a class="link link-modal" href="#">Напишите нам</a>
         </div>
       </section>
     </main>
