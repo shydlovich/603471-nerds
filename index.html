@@ -27,9 +27,11 @@
               <a class="menu-link" href="#">Контакты</a>
             </li>
           </ul>
-          <div class="menu-item">
-            <a class="menu-link basket" href="#">Корзина</a>
-          </div>
+          <ul class="basket-list">
+            <li class="menu-item">
+              <a class="menu-link basket" href="#">Корзина</a>
+            </li>
+          </ul>
         </nav>
         <section class="slider">
           <div class="container-slider">
@@ -90,8 +92,8 @@
         </section>
         <article class="description">
           <section class="description-list">
-            <b class="tagline cry">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
-            <p class="text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+            <b class="tagline cry">Мы — маленькая, но гордая<br> дизайн-студия из Краснодара.</b>
+            <p class="text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше креатива. Работаем не покладая рук, как роботы.</p>
             <b class="tagline Job">Выполняем заказы на разработку:</b>
             <ul class="offers-list">
               <li class="offers-item">Веб-сайтов любой сложности</li>
@@ -109,7 +111,7 @@
                 <th class="table-item">100<span class="sign">%</span></th>
                 <th class="table-item">50<span class="sign">%</span></th>
               </tr>
-              <tr class="table-list">
+              <tr class="table-list table-list-conteiner">
                 <td class="table-item">Уровень самоотдачи</td>
                 <td class="table-item">Соблюдение сроков</td>
                 <td class="table-item">Минимальная предоплата</td>
@@ -120,7 +122,7 @@
         <section class="partners">
           <ul class="logo-list">
             <li class="logo-item">
-              <a class="logo-link" href="#"><img src="img/logo-1.png" alt="Логотип Академия" width="199" height="68"></a>
+              <a class="logo-link logo-link-one" href="#"><img src="img/logo-1.png" alt="Логотип Академия" width="199" height="68"></a>
             </li>
             <li class="logo-item">
               <a class="logo-link" href="#"><img src="img/logo-2.png" alt="Логотип Бородински" width="260" height="180"></a>
@@ -135,10 +137,12 @@
         </section>
       </div>
       <section class="modal modal-map">
-        <div class="modal-contacts">
-          <h2 class="head">NЁRDS DESIGN STUDIO</h2>
-          <p class="text">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8 <span class="contacts-phone">тел. +7 (812) 275-75-75</span></p>
-          <a class="link link-modal" href="#">Напишите нам</a>
+        <div class="container container-form">
+          <div class="modal-contacts">
+            <h2 class="head">NЁRDS DESIGN STUDIO</h2>
+            <p class="text">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8 <span class="contacts-phone">тел. +7 (812) 275-75-75</span></p>
+            <a class="link link-modal" href="#">Напишите нам</a>
+          </div>
         </div>
       </section>
     </main>
@@ -161,18 +165,24 @@
         </ul>
       </div>
     </footer>
-    <section class="visually-hidden">
+    <section class="visually-hidden modal-window modal-window-login">
+      <b class="tagline">Напишите нам</b>
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-        <b class="tagline">Напишите нам</b>
-        <div class="important">
-          <label class="visually-hidden" for="name-field">Ваше имя:</label>
-          <input class="name-user" type="text" name="name" id="name-field" placeholder="Имя Фамилия" autofocus>
-          <label class="visually-hidden" for="email-field">Ваш e-mail:</label>
-          <input class="name-email" type="text" name="email" id="email-field" placeholder="email@example.com">
+        <div class="login">
+          <div class="login-name">
+            <label class="visually-hidden" for="name-field">Ваше имя:</label>
+            <input class="name-user" type="text" name="name" id="name-field" placeholder="Имя Фамилия" autofocus>
+          </div>
+          <div class="login-email">
+            <label class="visually-hidden" for="email-field">Ваш e-mail:</label>
+            <input class="name-email" type="email" name="email" id="email-field" placeholder="email@example.com">
+          </div>
         </div>
-        <label class="visually-hidden" for="message-field">Текст письма:</label>
-        <textarea class="name-text" name="message" id="message-field" placeholder="В свободной форме"></textarea>
-        <button class="link" type="submit">Отправить</button>
+        <div class="login-textarea">
+          <label class="visually-hidden" for="message-field">Текст письма:</label>
+          <textarea class="name-text" name="message" id="message-field" placeholder="В свободной форме" rows="5"></textarea>
+        </div>
+        <button class="link link-send" type="submit">Отправить</button>
       </form>
       <button class="modal-close" type="button" aria-label="Закрыть форму"></button>
     </section>

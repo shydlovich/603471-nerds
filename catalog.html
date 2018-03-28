@@ -10,8 +10,8 @@
     <header class="main-header-list">
       <div class="container">
         <nav class="main-navigation" aria-label="Меню сайта">
-          <a class="logo">
-            <img src="img/nerds-logo.svg" alt="логотип">
+          <a href="index.html" class="logo">
+            <img src="img/nerds-logo.svg" alt="логотип" width="160" height="65">
           </a>
           <ul class="menu-list">
             <li class="menu-item">
@@ -27,9 +27,11 @@
               <a class="menu-link" href="#">Контакты</a>
             </li>
           </ul>
-          <div class="menu-item">
-            <a class="menu-link basket" href="#">Корзина</a>
-          </div>
+          <ul class="basket-list">
+            <li class="menu-item">
+              <a class="menu-link basket" href="#">Корзина</a>
+            </li>
+          </ul>
         </nav>
         <h1 class="caption">Магазин готовых шаблонов</h1>
       </div>
@@ -45,7 +47,7 @@
                   <div class="range-filter">
                     <div class="range-controls">
                       <div class="scale">
-                        <div class="bar" style="margin-left: 5%; width: 60%"></div>
+                        <div class="bar"></div>
                       </div>
                       <div class="toggle toggle-min"></div>
                         <div class="toggle toggle-max"></div>
@@ -133,7 +135,7 @@
                   </div>
                   <section class="information">
                     <h2 class="head"><a href="">Sedona</a></h2>
-                    <p class="text">Информационный сайт для туристов</p>
+                    <p class="text">Информационный сайт<br> для туристов</p>
                     <a class="link link-cataloge" href="#">9 900 руб.</a>
                   </section>
                 </article>
@@ -147,7 +149,7 @@
                   </div>
                   <section class="information">
                     <h2><a href="">Pink App</a></h2>
-                    <p class="text">Продуктовый лендинг приложения для iOS и Android</p>
+                    <p class="text">Продуктовый лендинг<br> приложения для iOS и Android</p>
                     <a class="link link-cataloge" href="#">9 900 руб.</a>
                   </section>
                 </article>
@@ -161,8 +163,8 @@
                   </div>
                   <section class="information">
                     <h2 class="head"><a href="">Barbershop</a></h2>
-                    <p class="text">Сайт салоны красоты. Для мужчин, да.</p>
-                    <a class="link link-cataloge" href="#">9 900 руб.</a>
+                    <p class="text">Сайт салоны красоты.<br> Для мужчин, да.</p>
+                    <a class="link link-cataloge" href="#">9 900р</a>
                   </section>
                 </article>
               </li>
@@ -175,7 +177,7 @@
                   </div>
                   <section class="information">
                     <h2 class="head"><a href="">MISHKA</a></h2>
-                    <p class="text">Интернет-магазин вязаных игрушек</p>
+                    <p class="text">Интернет-магазин<br> вязаных игрушек</p>
                     <a class="link link-cataloge" href="#">9 900 руб.</a>
                   </section>
                 </article>
@@ -189,7 +191,7 @@
                   </div>
                   <section class="information">
                     <h2 class="head"><a href="">A Plus</a></h2>
-                    <p class="text">Лендинг курсов повышения квалификации</p>
+                    <p class="text">Лендинг курсов повышения<br> квалификации</p>
                     <a class="link link-cataloge" href="#">9 900 руб.</a>
                   </section>
                 </article>
@@ -203,14 +205,14 @@
                   </div>
                   <section class="information">
                     <h2 class="head"><a href="">КВАСТ</a></h2>
-                    <p class="text">Промо-сайт производителя крафтового кваса</p>
+                    <p class="text">Промо-сайт производителя<br> крафтового кваса</p>
                     <a class="link link-cataloge" href="#">9 900 руб.</a>
                   </section>
                 </article>
              </li>
             </ul>
             <div class="pages-list">
-              <a class="pages-link one" href="">1</a>
+              <a class="pages-link one" href="catalog.html">1</a>
               <a class="pages-link" href="">2</a>
               <a class="pages-link" href="">3</a>
               <a class="pages-link pages-next" href="">Следующая</a>
@@ -219,10 +221,12 @@
         </div>
       </div>
       <section class="modal modal-map">
-        <div class="modal-contacts">
-          <h2 class="head">NЁRDS DESIGN STUDIO</h2>
-          <p class="text">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8 <span class="contacts-phone">тел. +7 (812) 275-75-75</span></p>
-          <a class="link link-modal" href="#">Напишите нам</a>
+        <div class="container container-form">
+          <div class="modal-contacts">
+            <h2 class="head">NЁRDS DESIGN STUDIO</h2>
+            <p class="text">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8 <span class="contacts-phone">тел. +7 (812) 275-75-75</span></p>
+            <a class="link link-modal" href="#">Напишите нам</a>
+          </div>
         </div>
       </section>
     </main>
@@ -245,18 +249,24 @@
         </ul>
       </div>
     </footer>
-    <section class="visually-hidden">
+    <section class="visually-hidden modal-window modal-window-login">
+      <b class="tagline">Напишите нам</b>
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-        <b class="tagline">Напишите нам</b>
-        <div class="important">
-          <label class="visually-hidden" for="name-field">Ваше имя:</label>
-          <input class="name-user" type="text" name="name" id="name-field" placeholder="Имя Фамилия" autofocus>
-          <label class="visually-hidden" for="email-field">Ваш e-mail:</label>
-          <input class="name-email" type="text" name="email" id="email-field" placeholder="email@example.com">
+        <div class="login">
+          <div class="login-name">
+            <label class="visually-hidden" for="name-field">Ваше имя:</label>
+            <input class="name-user" type="text" name="name" id="name-field" placeholder="Имя Фамилия" autofocus>
+          </div>
+          <div class="login-email">
+            <label class="visually-hidden" for="email-field">Ваш e-mail:</label>
+            <input class="name-email" type="email" name="email" id="email-field" placeholder="email@example.com">
+          </div>
         </div>
-        <label class="visually-hidden" for="message-field">Текст письма:</label>
-        <textarea class="name-text" name="message" id="message-field" placeholder="В свободной форме"></textarea>
-        <button class="link" type="submit">Отправить</button>
+        <div class="login-textarea">
+          <label class="visually-hidden" for="message-field">Текст письма:</label>
+          <textarea class="name-text" name="message" id="message-field" placeholder="В свободной форме" rows="5"></textarea>
+        </div>
+        <button class="link link-send" type="submit">Отправить</button>
       </form>
       <button class="modal-close" type="button" aria-label="Закрыть форму"></button>
     </section>
