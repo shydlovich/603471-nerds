@@ -21,7 +21,7 @@
               <a class="menu-link" href="#">Клиенты</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link" href="catalog.html">Магазин</a>
+              <a class="menu-link menu-link-catalog" href="catalog.html">Магазин</a>
             </li>
             <li class="menu-item">
               <a class="menu-link" href="#">Контакты</a>
@@ -53,8 +53,8 @@
                         <div class="toggle toggle-max"></div>
                     </div>
                     <div class="price-controls">
-                      <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                      <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                      <label class="min-price">от<input name="min-price" type="text" value="0"></label>
+                      <label class="max-price">до<input name="max-price" type="text" value="15000"></label>
                     </div>
                   </div>
                 </div>
@@ -77,25 +77,27 @@
                 </div>
                 <div class="capabilities">
                   <b class="tagline">Особенности:</b>
-                  <div class="capabilities-item">
-                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="slider" id="slider-field" checked>
-                    <label for="slider-field">Слайдер</label>
-                  </div>
-                  <div class="capabilities-item">
-                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="advantages" id="advantages">
-                    <label for="advantages">Блок преимуществ</label>
-                  </div>
-                  <div class="capabilities-item">
-                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="news" id="news" checked>
-                    <label for="news">Новости</label>
-                  </div>
-                  <div class="capabilities-item">
-                    <input class="visually-hidden filter-input-checkbox"  type="checkbox" name="gallery" id="gallery">
-                    <label for="gallery">Галерея</label>
-                  </div>
-                  <div class="capabilities-item">
-                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="basket" id="basket">
-                    <label for="basket">Корзина</label>
+                  <div class="capabilities-list">
+                    <div class="capabilities-item">
+                      <input class="visually-hidden filter-input-checkbox" type="checkbox" name="slider" id="slider-field" checked>
+                      <label for="slider-field">Слайдер</label>
+                    </div>
+                    <div class="capabilities-item">
+                      <input class="visually-hidden filter-input-checkbox" type="checkbox" name="advantages" id="advantages">
+                      <label for="advantages">Блок преимуществ</label>
+                    </div>
+                    <div class="capabilities-item">
+                      <input class="visually-hidden filter-input-checkbox" type="checkbox" name="news" id="news" checked>
+                      <label for="news">Новости</label>
+                    </div>
+                    <div class="capabilities-item">
+                      <input class="visually-hidden filter-input-checkbox"  type="checkbox" name="gallery" id="gallery">
+                      <label for="gallery">Галерея</label>
+                    </div>
+                    <div class="capabilities-item">
+                      <input class="visually-hidden filter-input-checkbox" type="checkbox" name="basket" id="basket">
+                      <label for="basket">Корзина</label>
+                    </div>
                   </div>
                   <div class="show-button">
                     <button class="link link-show" type="submit">Показать</button>
@@ -109,19 +111,19 @@
               <p class="text">Сортировать:</p>
               <ul class="sorting">
                 <li class="sorting-list">
-                  <a class="sorting-link" href="">По цене</a>
+                  <a class="sorting-link sorting-link-amount" href="#">По цене</a>
                 </li>
                 <li class="sorting-list">
-                  <a class="sorting-link" href="">По типу</a>
+                  <a class="sorting-link" href="#">По типу</a>
                 </li>
                 <li class="sorting-list">
-                  <a class="sorting-link" href="">По названию</a>
+                  <a class="sorting-link" href="#">По названию</a>
                 </li>
                 <li class="sorting-list">
-                  <a class="sorting-link sorting-down" href="" aria-label="По убыванию"></a>
+                  <a class="sorting-link sorting-down" href="#" aria-label="По убыванию"></a>
                 </li>
                 <li class="sorting-list">
-                  <a class="sorting-link sorting-up" href="" aria-label="По возрастанию"></a>
+                  <a class="sorting-link sorting-up" href="#" aria-label="По возрастанию"></a>
                 </li>
               </ul>
             </div>
@@ -212,15 +214,16 @@
              </li>
             </ul>
             <div class="pages-list">
-              <a class="pages-link one" href="catalog.html">1</a>
-              <a class="pages-link" href="">2</a>
-              <a class="pages-link" href="">3</a>
-              <a class="pages-link pages-next" href="">Следующая</a>
+              <a class="pages-link one">1</a>
+              <a class="pages-link" href="#">2</a>
+              <a class="pages-link" href="#">3</a>
+              <a class="pages-link pages-next" href="#">Следующая</a>
             </div>
           </div>
         </div>
       </div>
       <section class="modal modal-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651577!2d30.320894616143416!3d59.93879418187627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1522478122296" width="100%" height="415" frameborder="0" style="border:0" allowfullscreen></iframe>
         <div class="container container-form">
           <div class="modal-contacts">
             <h2 class="head">NЁRDS DESIGN STUDIO</h2>
@@ -249,21 +252,21 @@
         </ul>
       </div>
     </footer>
-    <section class="visually-hidden modal-window modal-window-login">
+    <section class="modal-window modal-window-login">
       <b class="tagline">Напишите нам</b>
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="login">
           <div class="login-name">
-            <label class="visually-hidden" for="name-field">Ваше имя:</label>
+            <label class="login-name-item" for="name-field">Ваше имя:</label>
             <input class="name-user" type="text" name="name" id="name-field" placeholder="Имя Фамилия" autofocus>
           </div>
           <div class="login-email">
-            <label class="visually-hidden" for="email-field">Ваш e-mail:</label>
+            <label class="login-email-item" for="email-field">Ваш e-mail:</label>
             <input class="name-email" type="email" name="email" id="email-field" placeholder="email@example.com">
           </div>
         </div>
         <div class="login-textarea">
-          <label class="visually-hidden" for="message-field">Текст письма:</label>
+          <label class="login-textarea-item" for="message-field">Текст письма:</label>
           <textarea class="name-text" name="message" id="message-field" placeholder="В свободной форме" rows="5"></textarea>
         </div>
         <button class="link link-send" type="submit">Отправить</button>

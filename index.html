@@ -92,7 +92,7 @@
         </section>
         <article class="description">
           <section class="description-list">
-            <b class="tagline cry">Мы — маленькая, но гордая<br> дизайн-студия из Краснодара.</b>
+            <b class="tagline cry">Мы &#8211; маленькая, но гордая<br> дизайн-студия из Краснодара.</b>
             <p class="text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше креатива. Работаем не покладая рук, как роботы.</p>
             <b class="tagline Job">Выполняем заказы на разработку:</b>
             <ul class="offers-list">
@@ -137,6 +137,7 @@
         </section>
       </div>
       <section class="modal modal-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651577!2d30.320894616143416!3d59.93879418187627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1522478122296" width="100%" height="415" frameborder="0" style="border:0" allowfullscreen></iframe>
         <div class="container container-form">
           <div class="modal-contacts">
             <h2 class="head">NЁRDS DESIGN STUDIO</h2>
@@ -165,26 +166,88 @@
         </ul>
       </div>
     </footer>
-    <section class="visually-hidden modal-window modal-window-login">
+    <section class="modal-window modal-window-login">
       <b class="tagline">Напишите нам</b>
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="login">
           <div class="login-name">
-            <label class="visually-hidden" for="name-field">Ваше имя:</label>
-            <input class="name-user" type="text" name="name" id="name-field" placeholder="Имя Фамилия" autofocus>
+            <label class="login-name-item" for="name-field">Ваше имя:</label>
+            <input class="name-user" type="text" name="user" id="name-field" placeholder="Имя Фамилия" autofocus>
           </div>
           <div class="login-email">
-            <label class="visually-hidden" for="email-field">Ваш e-mail:</label>
+            <label class="login-email-item" for="email-field">Ваш e-mail:</label>
             <input class="name-email" type="email" name="email" id="email-field" placeholder="email@example.com">
           </div>
         </div>
         <div class="login-textarea">
-          <label class="visually-hidden" for="message-field">Текст письма:</label>
+          <label class="login-textarea-item" for="message-field">Текст письма:</label>
           <textarea class="name-text" name="message" id="message-field" placeholder="В свободной форме" rows="5"></textarea>
         </div>
         <button class="link link-send" type="submit">Отправить</button>
       </form>
-      <button class="modal-close" type="button" aria-label="Закрыть форму"></button>
+      <button class="modal-close" type="submit" aria-label="Закрыть форму"></button>
     </section>
+
+  <script>
+    var link = document.querySelector(".link-modal");
+
+    var popup = document.querySelector(".modal-window");
+    var close = popup.querySelector(".modal-close");
+
+    var form = popup.querySelector(".modal-form");
+    var login = popup.querySelector("[name=user]");
+    var password = popup.querySelector("[name=email]");
+
+    var isStorageSupport = true;
+    var storage = "";
+
+    try {
+      storage = localStorage.getItem("user");
+    } catch (err) {
+      isStorageSupport = false;
+    }
+
+    link.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("modal-exhibition");
+
+      if (storage) {
+        user.value = storage;
+        email.focus();
+      } else {
+        user.focus();
+      }
+    });
+
+    close.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.remove("modal-exhibition");
+      popup.classList.remove("modal-error");
+    });
+
+    form.addEventListener("submit", function (evt) {
+      if (!login.value || !password.value) {
+        evt.preventDefault();
+        popup.classList.remove("modal-error");
+        popup.offsetWidth = popup.offsetWidth;
+        popup.classList.add("modal-error");
+      } else {
+        if (isStorageSupport) {
+          localStorage.setItem("user", user.value);
+        }
+      }
+    });
+
+    window.addEventListener("keydown", function (evt) {
+      if (evt.keyCode === 27) {
+        evt.preventDefault();
+        if (popup.classList.contains("modal-exhibition")) {
+          popup.classList.remove("modal-spow");
+          popup.classList.remove("modal-error");
+        }
+      }
+    });
+  </script>
+
   </body>
 </html>
