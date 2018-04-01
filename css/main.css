@@ -47,6 +47,12 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .head {
   font-size-adjust: 24px;
   line-height: 30px;
@@ -96,7 +102,6 @@ a {
 
 .main-navigation {
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
   padding-top: 49px;
@@ -111,6 +116,7 @@ a {
   align-items: flex-end;
   justify-content: space-between;
   margin: 0;
+  margin-left: 201px;
   padding: 0;
   padding-bottom: 9px;
   width: 440px;
@@ -141,10 +147,8 @@ a {
 
 .menu-item .basket {
   display: flex;
-  position: relative;
   justify-content: flex-end;
-  width: 160px;
-  text-align: right;
+  align-items: center;
 }
 
 .menu-link-catalog {
@@ -158,6 +162,7 @@ a {
   align-items: flex-end;
   justify-content: space-between;
   margin: 0;
+  margin-left: auto;
   padding: 0;
   padding-bottom: 9px;
   list-style: none;
@@ -165,11 +170,9 @@ a {
 
 .basket::before {
   content: "";
-  position: absolute;
-  top: 6px;
-  left: 44px;
   width: 16px;
   height: 16px;
+  margin-right: 26px;
   background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -455,15 +458,18 @@ a {
   line-height: 24px;
 }
 
-.description-list b.job {
+.description-list .job {
   display: block;
   margin-bottom: 24px;
+  padding: 0;
   text-transform: uppercase;
 }
 
 .description::after {
   content: "";
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 2px;
   background-color: #eeeeee;
@@ -506,10 +512,8 @@ a {
 
 .offers-list li::before {
   display: block;
-  position: absolute;
-  top: 9px;
-  left: 0px;
   content: "";
+  margin-right: 10px;
   width: 26px;
   height: 2px;
   text-align: center;
@@ -517,9 +521,9 @@ a {
 }
 
 .offers-list li {
-  position: relative;
+  display: flex;
+  align-items: center;
   margin-bottom: 24px;
-  padding-left: 36px;
 }
 
 .table-list {
@@ -562,15 +566,15 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  position: relative;
   margin: 0;
   padding: 0;
   background-position: center;
   list-style: none;
 }
 
-.logo-list img.logo-link-one {
-  display: block;
+.logo-link-one img{
+  width: 199px;
+  height: 68;
   padding: 62px 30px 50px;
 }
 
@@ -580,10 +584,6 @@ a {
   width: 260px;
   height: 180px;
   vertical-align: middle;
-}
-
-.logo-link-one img {
-  padding: 62px 30px 50px;
 }
 
 .logo-link {
@@ -605,16 +605,17 @@ a {
   opacity: 0.1;
 }
 
-li.logo-item::after {
-  display: block;
+.logo-item::after {
   content: "";
-  position: absolute;
-  top: 88px;
-  left: 254px;
+  flex-shrink: 0;
   width: 50px;
   height: 2px;
   background-color: #eeeeee;
   transform: rotate(90deg);
+}
+
+.logo-item:last-child::after {
+  display: none;
 }
 
 .modal {
@@ -930,7 +931,7 @@ h1.caption {
 }
 
 .capabilities-list {
-  margin-bottom: 47px;
+  margin-bottom: 46px;
 }
 
 .capabilities-item label {
@@ -947,8 +948,6 @@ h1.caption {
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.4;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
 }
 
 .capabilities-item input[type="checkbox"]:checked ~ label::before {
@@ -1007,7 +1006,8 @@ h1.caption {
 
 .link-show {
   display: block;
-  padding: 15px 89px;
+  width: 260px;
+  padding: 16px 10px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -1110,7 +1110,7 @@ h1.caption {
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   padding: 0;
   list-style: none;
 }
@@ -1158,7 +1158,7 @@ h1.caption {
   opacity: 0.1;
 }
 
-.points-browser  {
+.points-browser {
   opacity: 0.7;
 }
 
@@ -1199,6 +1199,7 @@ h1.caption {
   display: block;
 }
 
+
 .link-cataloge {
   color: #ffffff;
   background-color: #fb565a;
@@ -1222,19 +1223,20 @@ h1.caption {
   font: inherit;
 }
 
-.pages-list a {
+.pages-link {
   display: inline-block;
   width: 50px;
   height: 50px;
-  margin-right: 9px;
+  margin-right: 11px;
   text-align: center;
   vertical-align: middle;
-  line-height: 50px;
+  line-height: 51px;
   text-decoration: none;
   font-weight: 700;
   color: #000000;
   border-radius: 2px;
   background-color: #eeeeee;
+  box-sizing: content-box;
 }
 
 .pages-list .pages-next {
@@ -1244,9 +1246,11 @@ h1.caption {
 }
 
 .pages-list .one {
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
   background-color: #ffffff;
   border: 3px solid #dbdbdb;
-  transform: scale(0.9);
 }
 
 .pages-list a[href]:hover {
@@ -1406,7 +1410,7 @@ h1.caption {
 @keyframes shake {
   0%,
   100% {
-    transform: translateX(0);
+    transform: translateX();
   }
 
   10%,
