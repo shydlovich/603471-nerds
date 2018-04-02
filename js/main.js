@@ -12,9 +12,9 @@ var storage = "";
 
 try {
 storage = localStorage.getItem("user");
-} catch (err) {
+  } catch (err) {
   isStorageSupport = false;
-  }
+}
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -28,14 +28,14 @@ close.addEventListener("click", function (evt) {
 });
 
 form.addEventListener("submit", function (evt) {
-if (!login.value || !password.value) {
-  evt.preventDefault();
-  popup.classList.remove("modal-error");
-  popup.offsetWidth = popup.offsetWidth;
-  popup.classList.add("modal-error");
-} else {
-  if (isStorageSupport) {
-    localStorage.setItem("user", user.value);
+  if (!login.value || !password.value) {
+    evt.preventDefault();
+    popup.classList.remove("modal-error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("modal-error");
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem("user", user.value);
     }
   }
 });

@@ -81,6 +81,7 @@ img {
 .container {
   width: 1160px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .logo {
@@ -236,6 +237,7 @@ img {
   width: 18px;
   height: 18px;
   padding: 8px;
+  vertical-align: middle;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -281,21 +283,21 @@ img {
   background-position: 100% 20px;
 }
 
-#product-1:checked ~ .slider-list .slider-item:nth-child(1) {
+.product-list-1:checked ~ .slider-list .slider-item:nth-child(1) {
   display: block;
 }
 
-#product-2:checked ~ .slider-list .slider-item:nth-child(2) {
+.product-list-2:checked ~ .slider-list .slider-item:nth-child(2) {
   display: block;
 }
 
-#product-3:checked ~ .slider-list .slider-item:nth-child(3) {
+.product-list-3:checked ~ .slider-list .slider-item:nth-child(3) {
   display: block;
 }
 
-#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
-#product-2:checked ~ .slider-controls .slider-controls-item--2::before,
-#product-3:checked ~ .slider-controls .slider-controls-item--3::before {
+.product-list-1:checked ~ .slider-controls .slider-controls-item--1::before,
+.product-list-2:checked ~ .slider-controls .slider-controls-item--2::before,
+.product-list-3:checked ~ .slider-controls .slider-controls-item--3::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -508,6 +510,10 @@ img {
   display: block;
   margin-bottom: 24px;
   padding: 0;
+  font: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -538,13 +544,13 @@ img {
   background-repeat: no-repeat;
 }
 
-.job {
+.statistics b {
   display: block;
   padding-left: 19px;
   margin-bottom: 35px;
-  font-family: "Roboto", "Arial", sans-serif;
+  font: inherit;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 24px;
   text-transform: uppercase;
   color: #000000;
@@ -774,10 +780,11 @@ iframe {
 
 b.benefit {
   display: block;
-  margin-bottom: 10px;
+  font: inherit;
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .main-footer {
@@ -972,6 +979,7 @@ h1.caption {
   display: inline-block;
   width: 50%;
   font-size: 16px;
+  vertical-align: middle;
   text-transform: uppercase;
 }
 
@@ -1345,8 +1353,9 @@ h1.caption {
   text-align: center;
   vertical-align: middle;
   line-height: 51px;
-  text-decoration: none;
   font-weight: 700;
+  text-decoration: none;
+  vertical-align: middle;
   color: #000000;
   border-radius: 2px;
   background-color: #eeeeee;
@@ -1463,12 +1472,13 @@ h1.caption {
   width: 47%;
 }
 
-.modal-window label {
-  margin: 0;
-  margin-bottom: 10px;
+.modal-window .login-text {
+  font: inherit;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 700;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .modal-form input[type="text"],

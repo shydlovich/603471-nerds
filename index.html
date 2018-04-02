@@ -36,9 +36,9 @@
         <section class="slider">
           <div class="container-slider">
             <h2 class="visually-hidden">Преимущества</h2>
-            <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-            <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-            <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+            <input class="visually-hidden product-list-1" type="radio" id="product-1" name="toggle" checked>
+            <input class="visually-hidden product-list-2" type="radio" id="product-2" name="toggle">
+            <input class="visually-hidden product-list-3" type="radio" id="product-3" name="toggle">
             <div class="slider-controls">
               <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
               <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
@@ -99,7 +99,7 @@
             </ul>
           </section>
           <aside class="statistics logo-galery">
-            <b class="tagline job">с 2004 года Любим точность во всем:</b>
+            <b class="tagline">с 2004 года Любим точность во всем:</b>
             <table class="main-table">
               <tr class="table-list percentages">
                 <th class="table-item ">146<span class="sign">%</span></th>
@@ -117,7 +117,7 @@
         <section class="partners">
           <ul class="logo-list">
             <li class="logo-item">
-              <a class="logo-link logo-link-one" href="#"><img src="img/logo-1.png" alt="Логотип Академия" width="199" height="68"></a>
+              <a class="logo-link logo-link-one" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" alt="Логотип Академия" width="199" height="68"></a>
             </li>
             <li class="logo-item">
               <a class="logo-link" href="#"><img src="img/logo-2.png" alt="Логотип Бородински" width="260" height="180"></a>
@@ -166,16 +166,16 @@
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="login">
           <div class="login-name">
-            <label class="login-name-item" for="name-field">Ваше имя:</label>
+            <label class="login-text login-name-item" for="name-field">Ваше имя:</label>
             <input class="name-user" type="text" name="user" id="name-field" placeholder="Имя Фамилия">
           </div>
           <div class="login-email">
-            <label class="login-email-item" for="email-field">Ваш e-mail:</label>
+            <label class="login-text login-email-item" for="email-field">Ваш e-mail:</label>
             <input class="name-email" type="email" name="email" id="email-field" placeholder="email@example.com">
           </div>
         </div>
         <div class="login-textarea">
-          <label class="login-textarea-item" for="message-field">Текст письма:</label>
+          <label class="login-text login-textarea-item" for="message-field">Текст письма:</label>
           <textarea class="name-text" name="message" id="message-field" placeholder="В свободной форме" rows="5"></textarea>
         </div>
         <button class="link link-send" type="submit">Отправить</button>
