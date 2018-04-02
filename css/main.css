@@ -1,27 +1,3 @@
-@font-face {
-  font-family: "Roboto";
-  src: local("roboto"),
-       url("../fonts/roboto.woff") format("woff"),
-       url("../fonts/roboto.woff2") format("woff2");
-       font-weight: 400;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: local("robotobold"),
-       url("../fonts/robotobold.woff") format("woff"),
-       url("../fonts/robotobold.woff2") format("woff2");
-       font-weight: 700;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: local("robotomedium"),
-       url("../fonts/robotomedium.woff") format("woff"),
-       url("../fonts/robotomedium.woff2") format("woff2");
-       font-weight: 500;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -398,6 +374,7 @@ img {
 .features-item-red::before {
   display: block;
   content: "";
+  background-color: #ef2b32;
   background-image: url("../img/illustration-1.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -406,7 +383,7 @@ img {
 .features-item-green::before {
   display: block;
   content: "";
-  content: "";
+  background-color: #11ed7f;
   background-image: url("../img/illustration-2.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -415,7 +392,7 @@ img {
 .features-item-yellow::before {
   display: block;
   content: "";
-  content: "";
+  background-color: #f6e31d;
   background-image: url("../img/illustration-3.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -513,7 +490,7 @@ img {
   font: inherit;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -539,6 +516,7 @@ img {
   width: 360px;
   height: 208px;
   margin-bottom: 37px;
+  background-color: #d3d0c6;
   background-image: url(../img/nerds-illustration.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -550,7 +528,7 @@ img {
   margin-bottom: 35px;
   font: inherit;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
   color: #000000;
@@ -1477,7 +1455,7 @@ h1.caption {
   font: inherit;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 500;
+  font-weight: 700;
   margin: 0;
   margin-bottom: 10px;
 }

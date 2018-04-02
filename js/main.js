@@ -11,8 +11,8 @@ var isStorageSupport = true;
 var storage = "";
 
 try {
-storage = localStorage.getItem("user");
-  } catch (err) {
+  storage = localStorage.getItem("user");
+} catch (err) {
   isStorageSupport = false;
 }
 
