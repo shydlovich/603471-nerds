@@ -1378,14 +1378,13 @@ h1.caption {
 }
 
 .modal-window-login {
-  top: 50%;
-  left: 50%;
+  top: 10%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   width: 760px;
   padding: 70px 100px 80px;
   z-index: 9999;
-  -webkit-transform: translate(-480px, -300px);
-      -ms-transform: translate(-480px, -300px);
-          transform: translate(-480px, -300px);
 }
 
 .modal-close {
@@ -1512,6 +1511,10 @@ h1.caption {
 
 .modal-exhibition {
   display: block;
+  top: 10%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   -webkit-animation: bounce 0.6s;
           animation: bounce 0.6s;
 }
@@ -1542,8 +1545,8 @@ h1.caption {
   }
 
   90% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
 
   100% {
